@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  height: 60px;
+}
+
+nav > ul {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav > ul > li > a {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+nav > ul > li {
+  transition: transform 0.15s ease-in;
+}
+
+nav > ul > li:hover {
+  transform: translateY(-4px);
+}
+
+main {
+  margin-top: 60px;
+  background-color: #ffdef0;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+  width: 100%;
+}
+
+#main-banner {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+  max-height: 1080px;
+  padding: 20px 50px;
+  background-image: url("./Images/bg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px inset;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#main-banner > div,
+#middle-banner {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+#main-banner > div > h1 {
+  text-shadow: 4px 2px 10px rgba(28, 28, 28, 0.6);
+}
+
+.banner-img {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 320px;
+}
+
+.step-p {
+  font-weight: 600;
+  font-size: 18px;
+  color: grey;
+}
+
+#social-watermark > img {
+  width: 20px;
+}
+
+#watermark {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 200px !important;
+}
+
+#products {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.product {
+  position: relative;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.product > p {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.product-img {
+  width: 100%;
+  max-height: 450px;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 450px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.281);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.backdrop:hover {
+  opacity: 100;
+}
+
+.backdrop > a {
+  width: 200px;
+  padding: 10px 0;
+  text-align: center;
+  vertical-align: middle;
+  background-color: pink;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#chanel-slogan{
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 400;
+}
